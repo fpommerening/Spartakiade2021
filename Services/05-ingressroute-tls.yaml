@@ -1,0 +1,13 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: demo-a-ingress-tls
+spec:
+  entryPoints:
+  
+  routes:
+  - match: Host(`welcome.trainer.container-training.de`)
+    kind: Rule
+    services:
+    - name: welcome-cluster
+      

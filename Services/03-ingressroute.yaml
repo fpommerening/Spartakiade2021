@@ -1,0 +1,6 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: demo-a-ingress-nontls
+spec:
+  entryPoints:  
