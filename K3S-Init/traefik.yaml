@@ -1,0 +1,6 @@
+persistence:
+  enabled: true
+additionalArguments:
+- "--certificatesresolvers.lets-encrypt-prod.acme.tlschallenge"
+- "--certificatesresolvers.lets-encrypt-prod.acme.storage=/data/acme.json"
+- "--certificatesresolvers.lets-encrypt-prod.acme.email=letsencrypt@container-training.de"
