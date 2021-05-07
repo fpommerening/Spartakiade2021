@@ -16,3 +16,10 @@ spec:
         - name: app
           image: fpommerening/container-training:limiter
           imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "0.50"
+            limits:
+              memory: "256Mi"
+              cpu: "1.0"

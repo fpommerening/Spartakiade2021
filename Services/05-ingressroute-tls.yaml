@@ -4,10 +4,13 @@ metadata:
   name: demo-a-ingress-tls
 spec:
   entryPoints:
-  
+  - websecure
   routes:
   - match: Host(`welcome.trainer.container-training.de`)
     kind: Rule
     services:
     - name: welcome-cluster
+      port: 80
+  tls:
+    certResolver: lets-encrypt-prod
       
