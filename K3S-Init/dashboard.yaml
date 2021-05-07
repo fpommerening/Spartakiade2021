@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`dashboard.my.tld`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
+    - match: Host(`api.trainer.container-training.de`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
       kind: Rule
       services:
         - name: api@internal

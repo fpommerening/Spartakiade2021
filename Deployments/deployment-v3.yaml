@@ -7,11 +7,11 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: my-demo
+      app: welcome
   template:
     metadata:
       labels:
-        app: my-demo
+        app: welcome
     spec:
       containers:
       - image: fpommerening/container-training:webapp-v3
