@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: my-replicaset
+spec:
+  selector:
+    matchLabels:
+      app: my-demo
+  template:
+    metadata:
+      labels:
+        app: my-demo
+    spec:
+      containers:
+      - image: fpommerening/docker-training:latest
+        name: app
