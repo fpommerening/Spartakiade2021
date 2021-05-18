@@ -6,7 +6,7 @@ Die Demo-Anwendung wurde mit .NET Core 3.1 erstellt. Die Probe-Endpunkte bzw. Pf
 
 ```
 {
-    "Product" : "Kaffe schwarz"
+    "Product" : "Kaffee schwarz"
 }
 ```
 
