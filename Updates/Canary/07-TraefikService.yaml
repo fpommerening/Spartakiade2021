@@ -1,0 +1,6 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: TraefikService
+metadata:
+  name: canary-webapp-traefik-service
+  namespace: default
+spec:
