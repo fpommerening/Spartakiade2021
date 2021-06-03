@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: cafeteria-app-service
+  labels:
+    app: cafeteria-app
+spec:
+  selector:
+    app: cafeteria-app
+  ports:
+  - name: http
+    port: 80
