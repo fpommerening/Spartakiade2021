@@ -7,4 +7,7 @@ spec:
     - web
   routes:
   - match: Host(`canary.t.container-training.de`)
-    kind: Rule    
+    kind: Rule
+    services:
+    - name: canary-webapp-traefik-service
+      kind: TraefikService
