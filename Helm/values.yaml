@@ -1,0 +1,35 @@
+
+replicaCount: 1
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+  tag: "1.19"
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingressRoute:
+  enabled: true
+  entryPoint: web
+  host: chart-example.local
+
+resources: 
+   limits:
+     cpu: 100m
+     memory: 128Mi
+   requests:
+     cpu: 100m
+     memory: 128Mi
+
+files:
+  - name: index.html
+    folder: ""
+    content: "<html>\r\n    <body>\r\n        This is Version 1.\r\n    </body>\r\n</html>"
+  - name: bla.html
+    folder: "sub1"
+    content: "<html>\r\n    <body>\r\n        This is bal.\r\n    </body>\r\n</html>"
+  - name: blub.html
+    folder: "sub2"
+    content: "<html>\r\n    <body>\r\n        This is blub.\r\n    </body>\r\n</html>"
