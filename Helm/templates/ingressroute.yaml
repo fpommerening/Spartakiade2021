@@ -5,11 +5,11 @@ metadata:
   name: {{ include "static-web.fullname" . }}-ingressroute
 spec:
   entryPoints:
-  - web
+    - web
   routes:
-  - match: Host(`{{ .Values.ingressRoute.host}}`)"
+  - match: Host(`{{ .Values.ingressRoute.host}}`)
     kind: Rule
     services:
     - name: {{ include "static-web.fullname" . }}
-      port: http
+      port: 80
 {{- end }}
