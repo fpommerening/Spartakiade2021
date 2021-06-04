@@ -9,4 +9,4 @@ spec:
       - port: 80
         name: app
    selector:
-      app: canary-webapp-v3-app      
+      app: webapp-v3-app      
