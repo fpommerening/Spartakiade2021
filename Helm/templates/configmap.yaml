@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: static-web-configmap
+data:
+{{- range .Values.files }}
+ {{.name}}: {{.content | quote}}
+{{- end }}
+
+
