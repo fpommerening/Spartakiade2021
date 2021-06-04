@@ -3,9 +3,9 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 3.0.0
-    created: "2021-06-03T20:13:03.5305283+02:00"
+    created: "2021-06-04T14:02:31.9132741+02:00"
     description: A Helm chart WebApp
-    digest: 082ec284efd65d7dfedde97723054468067e9c43ceeb54415e670f7047177b26
+    digest: 218a320f88517981a85b05b19dbcdf93a4091c1284893d8f9f93b753421b6b8c
     name: webapp
     type: application
     urls:
@@ -13,9 +13,9 @@ entries:
     version: 3.0.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2021-06-03T20:13:03.5295294+02:00"
+    created: "2021-06-04T14:02:31.9112507+02:00"
     description: A Helm chart WebApp
-    digest: f6f09be79a8a0268e25ee53d892686232d158bd56a19eac8c77903fe1d8d1bac
+    digest: 0d04d5e6645298d9bba275f71fa91d1d3abcfa1823ae1d3edbe036cba31d939e
     name: webapp
     type: application
     urls:
@@ -23,12 +23,12 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-06-03T20:13:03.5295294+02:00"
+    created: "2021-06-04T14:02:31.907242+02:00"
     description: A Helm chart WebApp
-    digest: 1d9e29206aaf691cff3976b1d5787c099a49c31121465cc74e4072200866b27d
+    digest: 7b37ae50fef5f1e560e16371e69dcfd37a644b042b74953978dacd93dd2b62f5
     name: webapp
     type: application
     urls:
     - https://fpommerening.github.io/Spartakiade2021/webapp-1.0.0.tgz
     version: 1.0.0
-generated: "2021-06-03T20:13:03.5285292+02:00"
+generated: "2021-06-04T14:02:31.9032564+02:00"
