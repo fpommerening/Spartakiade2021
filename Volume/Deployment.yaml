@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shared-web-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shared-web-app
+  template:
+    metadata:
+      labels:
+        app: shared-web-app
+    spec:
+      containers:
+      - name: app
+        image: fpommerening/docker-training:latest
+        volumeMounts:
+        - name: webdata
+          mountPath: "/usr/share/nginx/html/share/"
+      volumes:
+      - name: webdata
+        persistentVolumeClaim:
+          claimName: my-share-pvc
+      
